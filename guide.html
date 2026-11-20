@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>วิธีใช้งาน — Easy Expense</title><meta name="theme-color" content="#f3f7fd"><link rel="icon" href="icons/favicon-32.png">
+<style>@font-face{font-family:'Anuphan';font-style:normal;font-display:swap;font-weight:400;src:url(fonts/anuphan-thai-400-normal.woff2) format('woff2');unicode-range:U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC}@font-face{font-family:'Anuphan';font-style:normal;font-display:swap;font-weight:400;src:url(fonts/anuphan-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Anuphan';font-style:normal;font-display:swap;font-weight:500;src:url(fonts/anuphan-thai-500-normal.woff2) format('woff2');unicode-range:U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC}@font-face{font-family:'Anuphan';font-style:normal;font-display:swap;font-weight:500;src:url(fonts/anuphan-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Anuphan';font-style:normal;font-display:swap;font-weight:600;src:url(fonts/anuphan-thai-600-normal.woff2) format('woff2');unicode-range:U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC}@font-face{font-family:'Anuphan';font-style:normal;font-display:swap;font-weight:600;src:url(fonts/anuphan-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Anuphan';font-style:normal;font-display:swap;font-weight:700;src:url(fonts/anuphan-thai-700-normal.woff2) format('woff2');unicode-range:U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC}@font-face{font-family:'Anuphan';font-style:normal;font-display:swap;font-weight:700;src:url(fonts/anuphan-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+:root{--bg:#f3f7fd;--card:#fff;--line:#e1e8f3;--ink:#22314a;--ink-2:#56657e;--brand:#3d7cf0;--soft:#e6f0ff;--warn:#c07a12;--warn-soft:#fdf2dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Anuphan",system-ui,sans-serif;font-size:17px;line-height:1.65}
+.wrap{max-width:640px;margin:0 auto;padding:calc(16px + env(safe-area-inset-top,0px)) 18px 60px}
+.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);margin:0 -18px;padding:10px 18px;display:flex;align-items:center;gap:12px}
+.back{display:inline-flex;align-items:center;gap:6px;background:var(--brand);color:#fff;text-decoration:none;border-radius:999px;padding:8px 16px;font-weight:600;font-size:15px}
+header.hero{text-align:center;padding:18px 0 8px}header.hero img{width:72px;height:72px;border-radius:20px;box-shadow:0 10px 24px rgba(61,124,240,.3)}
+h1{font-size:28px;margin:12px 0 2px}.sub{color:var(--ink-2);font-size:15px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:18px 0 8px}
+nav.toc a{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 13px;color:var(--ink-2);text-decoration:none;font-size:14.5px}
+section{background:var(--card);border-radius:20px;padding:18px 18px 8px;margin:14px 0;box-shadow:0 1px 2px rgba(40,70,120,.05),0 6px 20px rgba(40,70,120,.07);scroll-margin-top:70px}
+h2{font-size:21px;margin:0 0 8px;color:var(--brand)}h3{font-size:17px;margin:14px 0 4px}
+ol,ul{padding-left:22px;margin:6px 0 12px}li{margin:4px 0}
+.tip{background:var(--warn-soft);border-radius:12px;padding:10px 12px;font-size:15.5px}
+figure{margin:10px 0 14px;text-align:center}figure img{width:270px;max-width:80%;height:auto;border-radius:26px;border:6px solid #22314a;box-shadow:0 12px 30px rgba(34,49,74,.18)}
+dt{font-weight:600;margin-top:10px}dd{margin:2px 0 8px;color:var(--ink-2)}
+footer{text-align:center;color:var(--ink-2);font-size:14px;margin-top:24px}
+</style></head><body><div class="wrap">
+<div class="top"><a class="back" href="./">‹ กลับไปที่แอป</a></div>
+<header class="hero"><img src="icons/icon-192.png" alt=""><h1>วิธีใช้งาน Easy Expense</h1><div class="sub">บันทึกรายรับ-รายจ่ายในมือถือ ง่าย ปลอดภัย ข้อมูลเป็นของคุณคนเดียว</div></header>
+<nav class="toc"><a href="#install">ติดตั้งแอปลงมือถือ</a><a href="#start">เริ่มต้นครั้งแรก</a><a href="#add">บันทึกรายการ</a><a href="#list">หน้ารายการ</a><a href="#summary">สรุป</a><a href="#recurring">รายการประจำ</a><a href="#credit">บัตรเครดิตและรายการผ่อน</a><a href="#categories">ปรับหมวดหมู่</a><a href="#backup">สำรองข้อมูลและย้ายเครื่อง</a><a href="#excel">นำเข้าและส่งออก Excel</a><a href="#privacy">ความเป็นส่วนตัว</a><a href="#faq">คำถามที่พบบ่อย</a></nav>
+<section id="install"><h2>1. ติดตั้งแอปลงมือถือ</h2>
+<p>ติดตั้งครั้งเดียว แล้วเปิดจากไอคอนได้เหมือนแอปทั่วไป ใช้ได้แม้ไม่มีเน็ต</p>
+<h3>Android</h3><ol><li>เปิดลิงก์แอปใน <b>Chrome</b> (ถ้าเปิดจาก LINE ให้กด ⋮ → เปิดในเบราว์เซอร์อื่น → Chrome)</li><li>รอหน้าแอปโหลดครบสักครู่</li><li>กด ⋮ มุมขวาบน → <b>ติดตั้งแอป</b> → ติดตั้ง</li><li>ไอคอนกระเป๋าสตางค์สีฟ้าจะอยู่บนหน้าจอหลัก</li></ol>
+<h3>iPhone</h3><ol><li>เปิดลิงก์ใน <b>Safari</b></li><li>กดปุ่มแชร์ (สี่เหลี่ยมมีลูกศรขึ้น) → <b>เพิ่มไปยังหน้าจอโฮม</b> → เพิ่ม</li></ol>
+<p class="tip">กดค้างที่ไอคอน (Android) จะมีทางลัด <b>เพิ่มรายการ</b> และ <b>ดูสรุป</b></p></section><section id="start"><h2>2. เริ่มต้นครั้งแรก</h2>
+<p>ครั้งแรกที่เปิด แอปจะให้เลือกหมวดรายจ่ายที่คุณใช้ หมวดที่ไม่ได้ใช้แตะเพื่อปิดได้ (เปิดคืนได้ในตั้งค่า) แล้วกด <b>เริ่มใช้งาน</b></p>
+<p>ถ้าเคยใช้แอปนี้ในเครื่องอื่น กด <b>มีไฟล์สำรอง? กู้คืน</b> แล้วเลือกไฟล์สำรองของคุณ</p><figure><img src="guide-img/01-welcome.jpg" alt="หน้าต้อนรับ" loading="lazy" width="270" height="584"></figure></section><section id="add"><h2>3. บันทึกรายการ</h2>
+<ol><li>กดปุ่ม <b>+</b> สีฟ้าตรงกลางด้านล่าง</li><li>เลือก <b>รายจ่าย</b> หรือ <b>รายรับ</b></li><li>พิมพ์จำนวนเงิน</li><li>แตะหมวดหมู่</li><li>พิมพ์รายละเอียด หรือแตะคำที่แอปแนะนำ (แอปจำคำที่คุณใช้บ่อย)</li><li>กด <b>บันทึก</b> — มีหลายรายการ กด <b>บันทึก + ต่อ</b></li></ol>
+<p><b>ย้อนหลัง/ล่วงหน้า:</b> แตะ เมื่อวาน / พรุ่งนี้ หรือเลือกวันในปฏิทิน รายการล่วงหน้าจะมีป้ายสีส้ม และยังไม่นับในยอดจนถึงวันนั้น</p>
+<p><b>ทำซ้ำทุกเดือน:</b> เลือก ทุกเดือน ใต้ช่องรายละเอียด รายการจะขึ้นเองทุกเดือน</p><figure><img src="guide-img/04-add.jpg" alt="หน้าบันทึกรายการ" loading="lazy" width="270" height="584"></figure></section><section id="list"><h2>4. หน้ารายการ</h2>
+<ul><li>กล่องสีฟ้าด้านบนแสดง รายรับ รายจ่าย และคงเหลือของเดือน</li><li>กด ‹ › เพื่อดูเดือนอื่น แตะชื่อเดือนเพื่อกลับเดือนปัจจุบัน</li><li>ตัวกรอง ทั้งหมด / รายจ่าย / รายรับ / ล่วงหน้า • ปุ่ม 🔍 ค้นหารายการ</li><li><b>แก้ไขหรือลบ:</b> แตะที่รายการ ลบแล้วกด <b>เลิกทำ</b> ได้ภายใน 5 วินาที</li></ul><figure><img src="guide-img/03-list.jpg" alt="หน้ารายการ" loading="lazy" width="270" height="584"></figure></section><section id="summary"><h2>5. สรุป</h2>
+<p>แท็บ <b>สรุป</b> เลือกช่วงเวลา สัปดาห์นี้ เดือนนี้ เดือนก่อน 3 เดือน 6 เดือน ปีนี้ หรือ กำหนดเอง</p>
+<ul><li>วงกลมแสดงสัดส่วนรายจ่ายตามหมวด แตะหมวดเพื่อดูรายการในหมวดนั้น</li><li>กราฟแท่งรับเทียบจ่าย แตะแท่งเพื่อดูตัวเลข</li><li>จ่ายเฉลี่ยต่อวัน และรายจ่ายที่มากที่สุด</li></ul><figure><img src="guide-img/05-summary.jpg" alt="หน้าสรุป" loading="lazy" width="270" height="584"></figure></section><section id="recurring"><h2>6. รายการประจำ</h2>
+<p>แท็บ <b>ประจำ</b> สำหรับรายการที่เกิดทุกเดือน เช่น ค่าเช่า ค่าเน็ต ออมเงิน</p>
+<ul><li>กด <b>+ เพิ่มรายการประจำ</b> → ใส่จำนวน หมวด รายละเอียด วันที่ในเดือน และเดือนเริ่ม</li><li>เดือนไหนไม่เกิด: แตะรายการที่มีป้าย 🔁 → <b>ข้ามครั้งนี้</b> หรือแก้ยอดเฉพาะครั้งนี้</li><li>ใช้ไปสักพัก แอปจะ <b>แนะนำ</b> รายการที่เกิดซ้ำทุกเดือนให้เพิ่มได้ในแตะเดียว</li></ul><figure><img src="guide-img/06-recurring.jpg" alt="หน้ารายการประจำ" loading="lazy" width="270" height="584"></figure></section><section id="credit"><h2>7. บัตรเครดิตและรายการผ่อน</h2>
+<p>เข้าได้จากการ์ด <b>รายการผ่อนบัตรเครดิต</b> ในแท็บประจำ หรือแตะหมวดบัตรเครดิตในหน้าสรุป</p>
+<ul><li>กด <b>+ เพิ่มรายการผ่อน</b> → ชื่อสินค้า บัตร ยอดต่องวด จำนวนงวด เดือนของงวดแรก</li><li>แอปบอกว่าเดือนนี้งวดที่เท่าไร เหลือกี่งวด กี่บาท และยอดผ่อนต่อเดือนล่วงหน้า 6 เดือน</li><li><b>รวมอยู่ในบิลบัตรแล้ว</b> (ค่าเริ่มต้น): ถ้าคุณบันทึก "จ่ายบัตร" เป็นยอดรวมอยู่แล้ว ยอดผ่อนจะไม่ถูกนับซ้ำ</li></ul><figure><img src="guide-img/07-credit.jpg" alt="หน้าบัตรเครดิต" loading="lazy" width="270" height="584"></figure></section><section id="categories"><h2>8. ปรับหมวดหมู่</h2>
+<p>แท็บ <b>ตั้งค่า</b> → หมวดหมู่รายจ่าย / รายรับ</p>
+<ul><li><b>แก้ไข</b>: เปลี่ยนชื่อหรืออีโมจิ</li><li><b>ซ่อน</b>: หมวดที่ไม่ใช้ รายการเดิมยังอยู่ครบ</li><li><b>เพิ่มหมวดหมู่ใหม่</b>: เลือกประเภท ใส่อีโมจิและชื่อ → เพิ่ม</li></ul><figure><img src="guide-img/08-categories.jpg" alt="หน้าหมวดหมู่" loading="lazy" width="270" height="584"></figure></section><section id="backup"><h2>9. สำรองข้อมูลและย้ายเครื่อง</h2>
+<p><b>สำคัญ:</b> ข้อมูลเก็บในมือถือเครื่องนี้เท่านั้น ถ้าลบแอปหรือล้างข้อมูล Chrome ข้อมูลจะหาย ควรสำรองทุก 1–2 สัปดาห์ (แอปจะเตือนถ้าเกิน 14 วัน)</p>
+<ul><li><b>แชร์ไฟล์สำรอง</b> → เลือก Google Drive หรือ LINE Keep (แนะนำ)</li><li><b>บันทึกไฟล์</b> → ไฟล์ .json อยู่ในโฟลเดอร์ ดาวน์โหลด</li><li><b>เปลี่ยนเครื่อง:</b> ติดตั้งแอปในเครื่องใหม่ → ตั้งค่า → กู้คืนจากไฟล์สำรอง → เลือกไฟล์</li></ul>
+<p class="tip">ห้ามกด ล้างข้อมูล ของแอป Chrome ในตั้งค่า Android และตอนล้างประวัติ Chrome อย่าเลือก "คุกกี้และข้อมูลเว็บไซต์"</p><figure><img src="guide-img/09-backup.jpg" alt="หน้าสำรองข้อมูล" loading="lazy" width="270" height="584"></figure></section><section id="excel"><h2>10. นำเข้าและส่งออก Excel</h2>
+<ul><li><b>มีข้อมูลเก่า?</b> ตั้งค่า → แม่แบบ Excel → ดาวน์โหลด → กรอกในคอม (วันที่ | ประเภท | หมวดหมู่ | รายละเอียด | จำนวนเงิน) → ส่งไฟล์เข้ามือถือ → ตั้งค่า → นำเข้าจาก Excel / CSV</li><li>หมวดที่ไม่มีในแอป จะถูกสร้างให้อัตโนมัติ • นำเข้าซ้ำได้ ไม่เกิดรายการซ้ำ</li><li><b>ส่งออกเป็นไฟล์ Excel:</b> เปิดดูใน Excel / Google Sheets หรือใช้นำเข้ากลับ</li></ul></section><section id="privacy"><h2>11. ความเป็นส่วนตัว</h2>
+<ul><li>แอปไม่มีระบบสมาชิก ไม่ต้องสมัคร ไม่ส่งข้อมูลการเงินของคุณไปที่ใด</li><li>คนที่แชร์ลิงก์ให้คุณ <b>มองไม่เห็นข้อมูลของคุณ</b> เพราะข้อมูลอยู่ในมือถือคุณเท่านั้น</li><li>ไฟล์สำรองมีข้อมูลการเงินทั้งหมด เก็บไว้ในที่ที่เชื่อถือได้</li></ul></section><section id="faq"><h2>12. คำถามที่พบบ่อย</h2>
+<dl>
+<dt>ไม่เห็นเมนู "ติดตั้งแอป"</dt><dd>เปิดในแอป LINE/Facebook อยู่ ให้เปิดลิงก์ใน Chrome แล้วรอหน้าโหลดครบ</dd>
+<dt>ใช้หลายเครื่องพร้อมกันได้ไหม</dt><dd>ข้อมูลแต่ละเครื่องแยกกัน ย้ายข้อมูลได้ด้วยไฟล์สำรอง แต่ยังไม่ซิงก์อัตโนมัติ</dd>
+<dt>ขึ้นแถบ "มีเวอร์ชันใหม่ของแอป"</dt><dd>กด อัปเดต แอปจะโหลดใหม่ ข้อมูลไม่หาย</dd>
+<dt>ข้อมูลหาย</dt><dd>ตั้งค่า → กู้คืนจากไฟล์สำรอง → เลือกไฟล์ล่าสุด</dd>
+</dl></section>
+<footer>Easy Expense • ภาพในคู่มือเป็นข้อมูลตัวอย่าง</footer>
+</div></body></html>

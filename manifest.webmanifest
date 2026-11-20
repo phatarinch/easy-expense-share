@@ -1,0 +1,88 @@
+{
+ "id": "./",
+ "name": "Easy Expense — บันทึกรับ-จ่าย",
+ "short_name": "Easy Expense",
+ "description": "บันทึกรายรับ-รายจ่าย แยกหมวดหมู่ บันทึกล่วงหน้า/ย้อนหลัง ดูสรุปตามช่วงเวลา รายการประจำ และรายการผ่อนบัตรเครดิต",
+ "lang": "th",
+ "dir": "ltr",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#f3f7fd",
+ "theme_color": "#f3f7fd",
+ "categories": [
+  "finance",
+  "productivity"
+ ],
+ "icons": [
+  {
+   "src": "icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/maskable-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "icons/maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "เพิ่มรายการ",
+   "short_name": "เพิ่ม",
+   "url": "./?add=1",
+   "icons": [
+    {
+     "src": "icons/icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "ดูสรุป",
+   "short_name": "สรุป",
+   "url": "./#summary",
+   "icons": [
+    {
+     "src": "icons/icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  }
+ ],
+ "screenshots": [
+  {
+   "src": "screenshots/1-list.png",
+   "sizes": "780x1688",
+   "type": "image/png",
+   "form_factor": "narrow"
+  },
+  {
+   "src": "screenshots/2-summary.png",
+   "sizes": "780x1688",
+   "type": "image/png",
+   "form_factor": "narrow"
+  },
+  {
+   "src": "screenshots/3-credit.png",
+   "sizes": "780x1688",
+   "type": "image/png",
+   "form_factor": "narrow"
+  }
+ ]
+}
